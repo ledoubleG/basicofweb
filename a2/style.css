@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #de5f21;
+    background-color: #263D2D;
     color: white;
     text-align: center;
     padding: 40px;
@@ -22,7 +22,7 @@ header h1 {
 }
 
 nav {
-    background-color: #d67936;
+    background-color: #C65D35;
     text-align: center;
     padding: 15px;
 }
@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f3a06d;
+    color: #D7EF32;
 }
 
 main {
@@ -55,14 +55,14 @@ h2 {
 
 img {
     width: 500px;
-    max-width: 100%;
+    max-width: 35%;
     border-radius: 10px;
     display: block;
     margin: 20px auto;
 }
 
 footer {
-    background-color: #d67936;
+    background-color: #C65D35;
     color: white;
     text-align: center;
     padding: 15px;
