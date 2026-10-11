@@ -54,10 +54,10 @@ h2 {
 }
 
 img {
-    width: 500px;
+    width: 300px;
     max-width: 35%;
     border-radius: 10px;
-    display: block;
+    display: flexbox;
     margin: 20px auto;
 }
 
