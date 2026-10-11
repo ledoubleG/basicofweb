@@ -1,0 +1,69 @@
+
+/* Modified by Guillaume Carré */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #263445;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #263D2D;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+nav {
+    background-color: #C65D35;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    color: #D7EF32;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #17365d;
+}
+
+img {
+    width: 500px;
+    max-width: 35%;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #C65D35;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
