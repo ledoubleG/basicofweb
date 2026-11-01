@@ -1,60 +1,70 @@
-<!-- Guillaume Carré  -->
+<!-- Guillaume Carré -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Gallery</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My gallery</h1>
-        <p>Discover few of my favourites photographs.</p>
+    <header class="gallery-header">
+        <p class="eyebrow">Places & memories</p>
+        <h1>Collected <span>moments.</span></h1>
+        <p class="tagline">Three photographs, three different atmospheres.</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">← Home</a>
+        <a href="index.html#about">About</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
     </nav>
 
-    
-    <main class="gallery">
-        <div class="card">
-            <a href="images/alpes.jpg">
-                <img src="images/alpes.jpg" alt="Mountains with snow">
-            </a>
-            <div class="card-content">
-                <h2>The Alps</h2>
-                <p>A beautiful skiing day in the Alps.</p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="images/irlande.jpg">
-                <img src="images/irlande.jpg" alt="The Irish landscape">
-            </a>
-            
-            <div class="card-content">
-                <h2>Ireland</h2>
-                <p>Discover the Irish landscape.</p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="images/plage.jpg">
-                <img src="images/plage.jpg" alt="The French beach">
-            </a>
-            <div class="card-content">
-                <h2>French beach</h2>
-                <p>A beautiful beach in France.</p>
-            </div>
+    <main class="gallery-page">
+        <div class="gallery-intro">
+            <p class="section-kicker">A small collection</p>
+            <h2>Places I remember</h2>
+            <p>Click on any photograph to open it in its original size.</p>
         </div>
 
+        <section class="gallery-grid" aria-label="Photo gallery">
+            <article class="card card-featured">
+                <a href="images/alpes.jpg" aria-label="Open the original photograph of the Alps">
+                    <img src="images/alpes.jpg" alt="Snow-covered mountains in the Alps during a skiing day">
+                </a>
+                <div class="card-content">
+                    <p class="card-number">01 / WINTER</p>
+                    <h2>The Alps</h2>
+                    <p>A day surrounded by snow and mountains.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <a href="images/irlande.jpg" aria-label="Open the original photograph of the Irish landscape">
+                    <img src="images/irlande.jpg" alt="Green countryside and hills in the Irish landscape">
+                </a>
+                <div class="card-content">
+                    <p class="card-number">02 / NATURE</p>
+                    <h2>Ireland</h2>
+                    <p>A peaceful view of the Irish landscape.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <a href="images/plage.jpg" aria-label="Open the original photograph of a French beach">
+                    <img src="images/plage.jpg" alt="Sandy beach on the French coast">
+                </a>
+                <div class="card-content">
+                    <p class="card-number">03 / SUMMER</p>
+                    <h2>French beach</h2>
+                    <p>A moment by the sea on the French coast.</p>
+                </div>
+            </article>
+        </section>
     </main>
 
-
     <footer>
-        <p>Created by Guillaume Carré - 2026</p>
+        <p>Created by Guillaume Carré · 2026</p>
     </footer>
 </body>
 </html>

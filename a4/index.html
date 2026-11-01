@@ -1,58 +1,49 @@
-<!-- Guillaume Carré  -->
+<!-- Guillaume Carré -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Tennis Website</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>My Passion for Tennis</h1>
-        <p>Discover my favourite sport.</p>
+    <header class="site-header">
+        <p class="eyebrow">A little about my world</p>
+        <h1>My passion<br><span>for tennis.</span></h1>
+        <p class="tagline">More than a sport. A way to challenge myself.</p>
     </header>
 
-    <nav>
-        <a href="../index.html">Assignement root</a>
+    <nav aria-label="Main navigation">
+        <a href="../index.html">Assignment root</a>
         <a href="#about">About</a>
-        <a href="#gallery">Picture</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="#my-photo">My photo</a>
+        <a href="gallery.html">Gallery <span aria-hidden="true">↗</span></a>
     </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Tennis</h2>
-
-            <p>
-                Tennis is a racket sport played by two players (singles) or two teams 
-                of two players (doubles) on a court divided by a net.
-                Players use a racket to hit a felt-covered rubber ball over the net into 
-                the opponent's court. The goal is to land the ball so the opponent cannot  
-                return it properly (for example, missing the court boundaries or letting the ball bounce twice).
-            </p>
-            <p>I have been playing this sport since I was 6 and it teach me so many things like never say it's over, or being proud of me.</p>
+    <main class="home-layout">
+        <section id="about" class="about-panel">
+            <p class="section-kicker">01 / The game</p>
+            <h2>About tennis</h2>
+            <p>Tennis is a racket sport played by two players (singles) or two teams of two players (doubles) on a court divided by a net. Players use a racket to hit a felt-covered rubber ball over the net into the opponent's court. The goal is to land the ball so the opponent cannot return it properly.</p>
+            <p>I have been playing this sport since I was 6. It has taught me many things: never give up, keep improving and be proud of my progress.</p>
+            <a class="text-link" href="gallery.html">Explore my gallery <span aria-hidden="true">→</span></a>
         </section>
 
-        <section id="gallery">
-            <h2>My Photo</h2>
-
-            <p>For the context, this picture was taken one time I went to Roland Garros in the Philippe Chatrier court. It shows a match between
-                two French tennis players: Arthur Rinderchnech at the top and Luca van Asche at the bottom.
-            </p>
-
-            <img src="images/tennis.jpg" alt="A tennis court in Roland Garros">
-            
+        <section id="my-photo" class="feature-panel">
+            <div class="feature-image-wrap">
+                <img src="images/tennis.jpg" alt="A tennis match on the Philippe-Chatrier court at Roland-Garros">
+            </div>
+            <div class="feature-caption">
+                <p class="section-kicker">02 / A memory</p>
+                <h2>A day at Roland-Garros</h2>
+                <p>This photograph was taken during a match on the Philippe-Chatrier court, featuring two French players.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Created by Guillaume Carré - 2026</p>
+        <p>Created by Guillaume Carré · 2026</p>
     </footer>
-
 </body>
 </html>
