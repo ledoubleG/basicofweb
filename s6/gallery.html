@@ -1,54 +1,82 @@
-<!-- Guillaume Carré  -->
+<!--
+   Centria Edu - Basics of Web Development
+
+   Original author: Ville Heikkiniemi
+   Modified by: Guillaume Carré
+   Last modified: 2026-11-08
+
+   Based on the original course template.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Gallery</title>
-
+    <meta name="author" content="Ville Heikkiniemi">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <title>Centria Edu | Gallery</title>
 </head>
+
 <body>
     <header>
-        <h1>My gallery</h1>
-        <p>Discover few of my favourites photographs.</p>
+        <div class="container">
+            <nav>
+                <div class="logo">centria <span>edu</span></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#topics">Topics</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
+    <main>
+        <section class="gallery-hero">
+            <div class="container">
+                <span class="label">My photos</span>
+                <h1>Gallery</h1>
+                <p>A few places and moments I photographed in Finland.</p>
+                <a href="index.html" class="button">Back to home</a>
+            </div>
+        </section>
 
-    
-    <main class="gallery">
-        <div class="card card-background">
-            <div class="card-content">
-                <h2>The Alps</h2>
-                <p>A beautiful skiing day in the Alps.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="grayscale" src="images/irlande.jpg" alt="The Irish landscape">
-            <div class="card-content">
-                <h2>Ireland</h2>
-                <p>Discover the Irish landscape.</p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="images/plage.jpg">
-                <img src="images/plage.jpg" alt="The French beach">
-            </a>
-            <div class="card-content">
-                <h2>French beach</h2>
-                <p>A beautiful beach in France.</p>
-            </div>
-        </div>
+        <section class="topics gallery-section">
+            <div class="container">
+                <h2>Discover the photos</h2>
+                <div class="cards gallery-cards">
+                    <article class="card gallery-card background-card">
+                        <div class="background-card-content">
+                            <h3>A Finnish coastline</h3>
+                            <p>A peaceful view of the sea, with the sun shining through the clouds.</p>
+                        </div>
+                    </article>
 
+                    <article class="card gallery-card">
+                        <h3>River in the city</h3>
+                        <p>Red brick buildings stand beside a river flowing through the city.</p>
+                        <img class="grayscale-image" src="images/city-river.jpg"
+                             alt="Black and white view of a river flowing past red brick buildings and a bridge in a Finnish city">
+                    </article>
+
+                    <article class="card gallery-card">
+                        <h3>Street at sunset</h3>
+                        <p>The warm evening light creates long shadows along a quiet street.</p>
+                        <a class="image-link" href="images/sunset-street.jpg" target="_blank" rel="noopener">
+                            <img src="images/sunset-street.jpg"
+                                 alt="Quiet street lined with buildings and trees in the warm light of sunset; click to open the full-size image">
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-
     <footer>
-        <p>Created by Guillaume Carré - 2026</p>
+        <div class="container">
+            <p>&copy; 2026 Centria Edu</p>
+        </div>
     </footer>
 </body>
 </html>

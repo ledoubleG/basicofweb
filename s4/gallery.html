@@ -1,43 +1,80 @@
-<!-- Guillaume Carré  -->
+<!--
+   Centria Edu - Basics of Web Development
+
+   Original author: Ville Heikkiniemi
+   Modified by: Guillaume Carré
+   Last modified: 2026-11-08
+
+   Based on the original course template.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Gallery</title>
-
+    <meta name="author" content="Ville Heikkiniemi">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <title>Centria Edu | Gallery</title>
 </head>
+
 <body>
     <header>
-        <h1>My gallery</h1>
-        <p>Discover few of my favourites photographs.</p>
+        <div class="container">
+            <nav>
+                <div class="logo">centria <span>edu</span></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#topics">Topics</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
+    <main>
+        <section class="gallery-hero">
+            <div class="container">
+                <span class="label">My photos</span>
+                <h1>Gallery</h1>
+                <p>A few places and moments I photographed in Finland.</p>
+                <a href="index.html" class="button">Back to home</a>
+            </div>
+        </section>
 
-    <main class = "gallery">
-        <div class = "card">
-            <img src="images/alpes.jpg" alt="the Alps during a skiing day">
-            <p>The Alps</p>
-        </div>
-        
-        <div class="card">
-            <img src="images/irlande.jpg" alt="The Irish landscape">
-            <p>Ireland</p>
-        </div>
+        <section class="topics gallery-section">
+            <div class="container">
+                <h2>Discover the photos</h2>
+                <div class="cards gallery-cards">
+                    <article class="card gallery-card">
+                        <h3>A Finnish coastline</h3>
+                        <p>A peaceful view of the sea, with the sun shining through the clouds.</p>
+                        <img src="images/finnish-coast.jpg"
+                             alt="Sunny Finnish coastline with calm water, reeds, rocks and trees">
+                    </article>
 
-        <div class="card">
-            <img src="images/plage.jpg" alt="The French beach">
-            <p>French beach</p>
-        </div>
+                    <article class="card gallery-card">
+                        <h3>River in the city</h3>
+                        <p>Red brick buildings stand beside a river flowing through the city.</p>
+                        <img src="images/city-river.jpg"
+                             alt="River flowing past red brick buildings and a bridge in a Finnish city">
+                    </article>
+
+                    <article class="card gallery-card">
+                        <h3>Street at sunset</h3>
+                        <p>The warm evening light creates long shadows along a quiet street.</p>
+                        <img src="images/sunset-street.jpg"
+                             alt="Quiet street lined with buildings and trees in the warm light of sunset">
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Created by Guillaume Carré - 2026</p>
+        <div class="container">
+            <p>&copy; 2026 Centria Edu</p>
+        </div>
     </footer>
 </body>
 </html>
