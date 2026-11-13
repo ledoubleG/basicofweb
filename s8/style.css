@@ -1,0 +1,394 @@
+/*
+   Centria Edu - Basics of Web Development
+   Modified by: Guillaume Carré
+*/
+
+:root {
+    --primary: #e10e49;
+    --light: #ffffff;
+    --dark: #1e1e1e;
+    --blue: #263f6a;
+    --green: #284e36;
+    --orange: #e37222;
+    --rose: #c24d52;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+nav {
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+nav a:hover,
+
+nav a[aria-current="page"] {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.05;
+}
+
+.hero p,
+.gallery-hero p {
+    max-width: 600px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.9rem 1.4rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    background-color: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--rose);
+}
+
+.button-secondary {
+    background-color: var(--blue);
+}
+
+.button-secondary:hover {
+    background-color: var(--green);
+}
+
+.topics {
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+
+.topics h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    min-width: 0;
+    padding: 2rem;
+    background-color: var(--light);
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.card ul,
+.card ol {
+    padding-left: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+.card:nth-child(1) {
+    border-top: 4px solid var(--blue);
+}
+
+.card:nth-child(2) {
+    border-top: 4px solid var(--green);
+}
+
+.card:nth-child(3) {
+    border-top: 4px solid var(--orange);
+}
+
+.card:nth-child(4) {
+    border-top: 4px solid var(--rose);
+}
+
+/* Gallery page */
+.gallery-hero {
+    padding: 4rem 0 3rem;
+}
+
+.gallery-hero h1 {
+    margin-bottom: 1rem;
+}
+
+.gallery-section {
+    padding-top: 3rem;
+}
+
+.gallery-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+}
+
+.gallery-card h3 {
+    margin-bottom: 0;
+}
+
+.gallery-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+@media (max-width: 800px) {
+    .gallery-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .cards,
+    .gallery-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .gallery-card img {
+        height: auto;
+        max-height: 320px;
+        object-fit: cover;
+    }
+}
+
+
+.background-card {
+    position: relative;
+    min-height: 340px;
+    justify-content: flex-end;
+    overflow: hidden;
+    color: var(--light);
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.72)),
+        url("images/finnish-coast.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top: 4px solid var(--blue);
+}
+
+.background-card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.background-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.background-card p {
+    color: #ffffff;
+}
+
+.grayscale-image {
+    filter: grayscale(100%);
+}
+
+.image-link {
+    display: block;
+    line-height: 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.image-link img {
+    transition: transform 0.25s ease;
+}
+
+.image-link:hover img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 700px) {
+    .background-card {
+        min-height: 280px;
+    }
+}
+
+
+/* Contact form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Radio buttons */
+
+.contact-form input[type="radio"] {
+    width: auto;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+.radio-group label {
+    margin-right: 1rem;
+}
+
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.contact-form legend {
+    font-weight: bold;
+}
+
+.contact-form button {
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 1.4rem;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: var(--rose);
+}
+
+/* Form validation */
+
+.contact-form input:not([type="radio"]):user-invalid,
+.contact-form select:user-invalid,
+.contact-form textarea:user-invalid {
+    border: 2px dashed #b00020;
+}
+
+.contact-form input:not([type="radio"]):user-valid,
+.contact-form select:user-valid,
+.contact-form textarea:user-valid {
+    border: 2px solid #24733c;
+}
